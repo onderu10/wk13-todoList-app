@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./main.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="div-class">
+          <div class="todo-class">
+            <h2>Todo List</h2>
+          
+            <div>
+              <input id="form-name" class="form-control" type="text" placeholder="New todo"  />
+             
+             
+              <button type="button" onclick="handleClickAddPerson()" class="btn-add">Add</button>
+              
+              <button type="button" onclick="handleDeleteAll()" class="btn-clear">Clear All</button>
+            </div>
+          </div>
+
+          <div class=person-class>
+            
+            <hr />
+            <table class="table">
+              <tbody id="todo-informations"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <script src="./data.js"></script>
+       <script src="./function.js"></script>
+
+  </body>
+</html>
